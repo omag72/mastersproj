@@ -53,6 +53,8 @@ services:
   mysql:
     image: mysql:latest
     container_name: mysql
+    volumes:
+      - ./mysql/:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: myrootpassword
       MYSQL_DATABASE: mydatabase
@@ -73,6 +75,7 @@ services:
       - "4040:4040"
     volumes:
       - ./:/home/jovyan/work
+      - ./visuals.ipynb:/home/jovyan/work/visuals.ipynb
     environment:
       - PYSPARK_PYTHON=python3
     command: ["start-notebook.sh", "--NotebookApp.token=", "--NotebookApp.password="]

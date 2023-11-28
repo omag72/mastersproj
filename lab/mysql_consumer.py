@@ -48,3 +48,4 @@ cassandra_df \
     .mode("append") \
     .jdbc(mysql_url, "sales_data", properties=mysql_properties)
     
+spark.stop()
