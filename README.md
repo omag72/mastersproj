@@ -33,10 +33,10 @@ Ensure you have the following software installed on your machine:
 Installation Instructions 
 Install important libraries 
 
-pip install confluent_kafka
-pip install faker
-pip install pyspark
-pip install cassandra-driver
+pip install confluent_kafka , 
+pip install faker, 
+pip install pyspark,
+pip install cassandra-driver,
 pip install mysql-connector-java==8.0.26
 
 Running the project
