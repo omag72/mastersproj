@@ -1,4 +1,4 @@
-# mastersproj - Realtime kafka spark cassandra mysql machine learning and bokeh 
+# Realtime kafka spark cassandra mysql machine learning and bokeh 
 The project is a real time kafka spak cassandra mysql and bokeh project.
 The project generates fake data and pushes it to a kafka producer which then send s the data to a spark application for processing 
 and the data is then stored in cassandra database.The spark application further aggregates the data stored in cassandra, 
